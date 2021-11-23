@@ -24,7 +24,7 @@
     </header>
 
     <section id="formulario">
-        <form>
+        <form id="perguntas">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -45,65 +45,65 @@
                 <div class="col-12">
                     <div class="container-perguntas separador">
                         <h6><label for="nome">Nome completo <span class="asterisco">*</span></label></h6>
-                        <input type="text" id="nome" class="form-control bg-dark text-light input-form" required>
+                        <input type="text" id="nome" name="nome" class="form-control bg-dark text-light input-form" required>
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
 
                 <div class="col-12">
                     <div class="container-perguntas separador">
                         <h6><label for="email">Email <span class="asterisco">*</span></label></h6>
-                        <input type="email" id="email" class="form-control bg-dark text-light input-form" required>
+                        <input type="email" id="email" name="email" class="form-control bg-dark text-light input-form" required>
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
 
                 <div class="col-12">
                     <div class="container-perguntas separador">
                         <h6><label for="tel">Telefone ( <i class="fab fa-whatsapp"></i> Whatsapp ) <span class="asterisco">*</span></label></h6>
-                        <input type="tel" id="tel" class="form-control bg-dark text-light input-form" required>
+                        <input type="tel" id="tel" name="tel" class="form-control bg-dark text-light input-form" required>
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
 
                 <div class="col-12">
                     <div class="container-perguntas separador">
                         <h6><label>Como ficou sabendo do pré-cadastro? <span class="asterisco">*</span></label></h6>
-                         <label class="separadorRadios"><input type="radio" name="preCadastro" value="redeSocial"> Redes Sociais</label><br>
-                         <label class="separadorRadios"><input type="radio" name="preCadastro" value="amigos"> Amigos / Colegas</label><br>
-                         <label class="separadorRadios"><input type="radio" name="preCadastro" id="outros"> Outros </label>
-                         <input type="text" id="outros" class="outros">
+                         <label class="separadorRadios"><input type="radio" name="preCadastro" value="redes social" required> Redes Sociais</label><br>
+                         <label class="separadorRadios"><input type="radio" name="preCadastro" value="amigos / colegas" required> Amigos / Colegas</label><br>
+                         <label class="separadorRadios"><input type="radio" name="preCadastro" value="outros" required> Outros </label>
+                         <input type="text" id="outros" name="txtOutros" class="outros">
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
 
                 <div class="col-12">
                     <div class="container-perguntas separador">
                         <h6><label>Qual sua primeira opção de curso? <span class="asterisco">*</span></label></h6>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="agronegocio"> Agronegócio</label><br>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="adsM"> Análise e Desenvolvimento de Sistemas (Manhã)</label><br>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="adsN"> Análise e Desenvolvimento de Sistemas (Noite)</label><br>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="eventos"> Eventos</label><br>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="gestao"> Gestão Empresarial</label><br>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="gestaoead"> Gestão Empresarial EAD</label><br>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="producaoAgro"> Produção agropecuária</label><br>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="marketing" id="marketing"> Marketing (NOVO)</label>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="agronegocio" required> Agronegócio</label><br>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="analise e desenvolvimento de sistemas(manha)" required> Análise e Desenvolvimento de Sistemas (Manhã)</label><br>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="aanalise e desenvolvimento de sistemas(noite)" required> Análise e Desenvolvimento de Sistemas (Noite)</label><br>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="eventos" required> Eventos</label><br>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="gestao empresarial" required> Gestão Empresarial</label><br>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="gestao empresarial EAD" required> Gestão Empresarial EAD</label><br>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="producao agropecuaria" required> Produção agropecuária</label><br>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="marketing" id="marketing" required> Marketing (NOVO)</label>
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
 
                 <div class="col-12">
                     <div class="container-perguntas separador">
                         <h6><label>Você segue a Fatec nas redes sociais? <span class="asterisco">*</span></label></h6>
-                         <label class="separadorRadios"><input type="radio" name="segueFatec" value="sim"> Sim</label><br>
-                         <label class="separadorRadios"><input type="radio" name="segueFatec" value="nao" id="naoSegue"> Não</label><br>
+                         <label class="separadorRadios"><input type="radio" name="segueFatec" value="sim" required> Sim</label><br>
+                         <label class="separadorRadios"><input type="radio" name="segueFatec" value="nao" required> Não</label><br>
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
 
                 <div class="col-12">
                     <div class="container-perguntas">
-                        <label><input type="checkbox" name="confirmacaoDados" id="confirmacaoDados"> Confirmo, que todos os dados estarão seguros e não serão divulgados em nehuma hipótese, sendo usados somente à titulo de divulgação e disseminação das ofertas da Instituição ao usuário <span class="asterisco">*</span></label>
+                        <label><input type="checkbox" name="confirmacaoDados" id="confirmacaoDados" required> Confirmo, que todos os dados estarão seguros e não serão divulgados em nehuma hipótese, sendo usados somente à titulo de divulgação e disseminação das ofertas da Instituição ao usuário <span class="asterisco">*</span></label>
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
 
                 <div class="col-12">
                     <div class="container-perguntas" style="text-align: center;">
-                        <button type="submit" class="btn btn-enviar">Enviar</button>
+                        <button type="submit" class="btn btn-enviar" id="enviarFormulario">Enviar</button>
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
             </div><!--Fim row-->
@@ -112,7 +112,7 @@
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script src="assets/js/requisicaoDB.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
