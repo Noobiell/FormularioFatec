@@ -18,8 +18,8 @@
     $sql = "INSERT INTO results(name, email, tel, preCadastro, opcaoCurso, redeSocial) VALUES('$nome', '$email', '$tel', '$preCadastro', '$opcaoCurso', '$redeSocial')";
 
     if(mysqli_query($conexao, $sql)){
-        echo "cadastro realizado com sucesso";
+        echo "sucesso";
     }else{
-        echo "erro ao realizar cadastro";
+        echo "erro";
     }
 ?>
