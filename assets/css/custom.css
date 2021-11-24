@@ -76,3 +76,15 @@ input{
     color: #fff;
     font-weight: 600;
 }
+
+/*RESULTADO PESQUISA*/
+.contato{
+    color: #fcbf49;
+    text-decoration: none;
+}
+.contato:hover{
+    color: #ffd2a1;
+}
+th{
+    color: #ff9320;
+}
