@@ -15,6 +15,9 @@
     <!--ICONES-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+    <!--sweetalert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <title>Formulário Fatec Presidente Prudente</title>
   </head>
   <body>
@@ -68,8 +71,8 @@
                         <h6><label>Como ficou sabendo do pré-cadastro? <span class="asterisco">*</span></label></h6>
                          <label class="separadorRadios"><input type="radio" name="preCadastro" value="redes social" required> Redes Sociais</label><br>
                          <label class="separadorRadios"><input type="radio" name="preCadastro" value="amigos / colegas" required> Amigos / Colegas</label><br>
-                         <label class="separadorRadios"><input type="radio" name="preCadastro" value="outros" required> Outros </label>
-                         <input type="text" id="outros" name="txtOutros" class="outros">
+                         <label class="separadorRadios"><input type="radio" name="preCadastro" value="outros" id="outros" required> Outros </label>
+                         <input type="text" name="txtOutros" class="outros">
                     </div><!--Fim container pergunta-->
                 </div><!--Fim col-->
 
@@ -78,7 +81,7 @@
                         <h6><label>Qual sua primeira opção de curso? <span class="asterisco">*</span></label></h6>
                          <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="agronegocio" required> Agronegócio</label><br>
                          <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="analise e desenvolvimento de sistemas(manha)" required> Análise e Desenvolvimento de Sistemas (Manhã)</label><br>
-                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="aanalise e desenvolvimento de sistemas(noite)" required> Análise e Desenvolvimento de Sistemas (Noite)</label><br>
+                         <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="analise e desenvolvimento de sistemas(noite)" required> Análise e Desenvolvimento de Sistemas (Noite)</label><br>
                          <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="eventos" required> Eventos</label><br>
                          <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="gestao empresarial" required> Gestão Empresarial</label><br>
                          <label class="separadorRadios"><input type="radio" name="opcaoCurso" value="gestao empresarial EAD" required> Gestão Empresarial EAD</label><br>
@@ -112,7 +115,9 @@
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="assets/js/requisicaoDB.js"></script>
+    
+    <script src="assets/js/envioFormulario.js"></script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
